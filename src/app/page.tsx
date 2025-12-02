@@ -3,6 +3,8 @@
 import Header from "../components/header";
 import HeroSection from "../components/hero-section"
 import BeneficiosSection from "../components/beneficios-section";
+import ComoFuncionaSection from "../components/comofunciona-section"
+import EconomiaSimuladaSection from "../components/economiasimulada-section";
 import PorqueUsisolSection from "../components/porqueusisol-section"
 import PortfolioSection from "../components/portfolio-section"
 import DepoimentosSection from "../components/depoimentos-section";
@@ -15,6 +17,8 @@ export default function Home() {
       <Header />
       <HeroSection />
       <BeneficiosSection />
+      <ComoFuncionaSection />
+      <EconomiaSimuladaSection />
       <PorqueUsisolSection />
       <PortfolioSection />
       <DepoimentosSection />
