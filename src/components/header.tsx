@@ -34,7 +34,7 @@ export default function Header() {
     >
       <Link href="/" className="cursor-pointer h-12 md:h-16">
         <Image
-          src="/usisol_logo_preto.png"
+          src="/usisol_logo_1.png"
           alt="UsiSol Logo"
           width={100}
           height={100}
