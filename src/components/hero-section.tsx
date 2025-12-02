@@ -138,7 +138,7 @@ export default function HeroSection() {
               <div className="absolute top-45 left-1/2 -translate-x-1/2">
                 <div className="relative h-28 w-56 sm:h-48 sm:w-96">
                   <Image
-                    src="/usisol_logo_1.png"
+                    src="/usisol_logo_2.png"
                     alt="Logo UsiSol"
                     fill
                     className="object-contain drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]"
