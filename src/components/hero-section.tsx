@@ -39,8 +39,7 @@ export default function HeroSection() {
       id="hero-section"
       aria-labelledby="hero-title"
       className="
-        relative flex min-h-screen items-start md:items-center justify-center 
-        overflow-visible md:overflow-hidden
+        relative flex min-h-screen items-start justify-center overflow-hidden md:items-center
         px-6 pt-28 pb-14
         md:px-12 md:pt-32 md:pb-20
       "
