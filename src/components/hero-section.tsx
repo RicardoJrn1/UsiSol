@@ -39,9 +39,10 @@ export default function HeroSection() {
       id="hero-section"
       aria-labelledby="hero-title"
       className="
-        relative flex min-h-screen items-center justify-center 
-        overflow-hidden px-6 py-14
-        md:px-12 md:py-20
+        relative flex min-h-screen items-start md:items-center justify-center 
+        overflow-visible md:overflow-hidden
+        px-6 pt-28 pb-14
+        md:px-12 md:pt-32 md:pb-20
       "
     >
       {/* Fundo com degradê */}
@@ -61,16 +62,15 @@ export default function HeroSection() {
         animate="show"
         className="w-full max-w-6xl mx-auto"
       >
-        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
+        <div className="grid items-start lg:items-center gap-10 lg:gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)]">
           {/* COLUNA ESQUERDA – Conteúdo */}
           <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
-
             <motion.h1
               id="hero-title"
               variants={itemVariants}
               className="
                 font-extrabold leading-tight tracking-tight text-[#0c1c3b]
-                text-[clamp(2.1rem,5.6vw,3.8rem)]
+                text-[clamp(1.9rem,5.2vw,3.6rem)]
               "
             >
               Reduza em até{" "}
@@ -92,7 +92,7 @@ export default function HeroSection() {
               className="mt-6 space-y-3 text-sm sm:text-base text-[#0c1c3b]"
             >
               {benefits.map((item) => (
-                <li key={item} className="flex items-start gap-2">
+                <li key={item} className="flex items-start gap-2 text-left">
                   <CheckCircle2 className="mt-[2px] h-5 w-5 flex-shrink-0 text-[#32b557]" />
                   <span>{item}</span>
                 </li>
@@ -135,7 +135,6 @@ export default function HeroSection() {
                 Falar direto com um especialista
               </a>
             </motion.div>
-
           </div>
 
           {/* COLUNA DIREITA – Imagem hero */}
@@ -144,7 +143,7 @@ export default function HeroSection() {
             className="
               relative mt-8 lg:mt-0
               mx-auto w-full max-w-md lg:max-w-lg
-              h-[340px] sm:h-[420px] lg:h-[480px]
+              h-[320px] sm:h-[400px] lg:h-[480px]
               overflow-hidden rounded-[2.2rem]
               shadow-[0_24px_60px_rgba(0,0,0,0.35)] ring-1 ring-white/40
             "
@@ -159,14 +158,6 @@ export default function HeroSection() {
 
             {/* Overlay suave */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent" />
-
-            {/* Label na imagem */}
-            <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-2xl bg-black/45 px-4 py-3 text-xs text-white backdrop-blur-md sm:text-sm">
-              <span>Projeto real de cliente UsiSol</span>
-              <span className="font-semibold text-[var(--accent-orange)]">
-                Economia na conta desde 2022
-              </span>
-            </div>
           </motion.div>
         </div>
       </motion.div>
