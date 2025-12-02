@@ -138,7 +138,7 @@ export default function HeroSection() {
               <div className="absolute top-45 left-1/2 -translate-x-1/2">
                 <div className="relative h-28 w-56 sm:h-48 sm:w-96">
                   <Image
-                    src="/usisol_logo.png"
+                    src="/usisol_logo_1.png"
                     alt="Logo UsiSol"
                     fill
                     className="object-contain drop-shadow-[0_10px_25px_rgba(0,0,0,0.45)]"
@@ -148,12 +148,6 @@ export default function HeroSection() {
             </motion.div>
         </div>
       </motion.div>
-
-      {/* Indicador de scroll */}
-      <div className="pointer-events-none absolute bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center text-[11px] text-black/60">
-        <span>Role para entender como funciona</span>
-        <div className="mt-2 h-8 w-px animate-pulse bg-black/30" />
-      </div>
     </section>
   )
 }

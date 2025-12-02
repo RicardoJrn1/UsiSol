@@ -72,6 +72,7 @@ export default function PortfolioSection() {
 
   return (
     <section
+      id="portfolio-section"
       data-header-theme="light"
       className="bg-[var(--primary-blue)] py-16 sm:py-24"
     >

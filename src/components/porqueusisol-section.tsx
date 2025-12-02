@@ -76,7 +76,7 @@ export default function PorqueUsisolSection() {
 
   return (
     <section
-      id="beneficios-section"
+      id="porque-usisol-section"
       data-header-theme="light"
       className="relative overflow-hidden bg-[var(--accent-orange)] py-16 sm:py-24"
     >

@@ -4,9 +4,9 @@ import { INSTAGRAM_LINK, WHATSAPP_LINK } from "./constants"
 
 const navigation = {
   solucoes: [
-    { name: "Residencial", href: "#portfolio-section" },
-    { name: "Empresarial", href: "#portfolio-section" },
-    { name: "Agronegócio", href: "#portfolio-section" },
+    { name: "Residencial" },
+    { name: "Empresarial" },
+    { name: "Agronegócio" },
   ],
   institucional: [
     { name: "Início", href: "#hero-section" },
@@ -41,7 +41,7 @@ export default function Footer() {
           <div className="space-y-6 -mt-4">
             <a href="#hero-section" aria-label="Voltar ao início" className="inline-block">
               <Image
-                src="/usisol_logo.png"
+                src="/usisol_logo_2.png"
                 alt="Logo da UsiSol"
                 width={100}
                 height={30}
@@ -76,9 +76,9 @@ export default function Footer() {
                 <ul className="mt-5 space-y-3">
                   {navigation.solucoes.map((item) => (
                     <li key={item.name}>
-                      <a href={item.href} className="text-sm text-gray-400 hover:text-white">
+                      <span className="text-sm text-gray-400">
                         {item.name}
-                      </a>
+                      </span>
                     </li>
                   ))}
                 </ul>

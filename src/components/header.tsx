@@ -47,9 +47,9 @@ export default function Header() {
       <nav className="hidden md:block">
         <ul className="navList">
           <li className="active"><Link href="/">Início</Link></li>
-          <li><Link href="/sobre">Sobre Nós</Link></li>
-          <li><Link href="/servicos">Serviços</Link></li>
-          <li><Link href="/contato">Contato</Link></li>
+          <li><Link href="#porque-usisol-section">Sobre Nós</Link></li>
+          <li><Link href="#portfolio-section">Serviços</Link></li>
+          <li><Link href="#contato-section">Contato</Link></li>
         </ul>
       </nav>
     </header>
