@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  /* Compensa a altura do header (h-20 = 5rem) */
+  scroll-padding-top: 5rem; 
+}
+
+:root {
+  /* Cores Principais */
+  --primary-blue: #294479; /* Azul escuro predominante */
+  --accent-orange: #ee8833; /* Laranja para chamadas e destaques */
+  --secondary-green: #3ab54a; /* Verde para sustentabilidade e economia */
+
+  /* Cores para o Degradê */
+  --gradient-yellow: #ffc107; /* Amarelo para o início do degradê */
+  --gradient-orange: #ee8833; /* Laranja para o fim do degradê */
+
+  /* Verde suave / sustentável */
+  --green-light: #3ab54a;
+}
+
+body {
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; 
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 1rem; /* Reduzido para acomodar o novo estilo */
+}
+
+.navList a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem; /* Levemente menor para um look mais clean */
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: 9999px; /* Pílula */
+  transition: all 0.3s ease;
+}
+
+/* Efeito hover para links não ativos */
+.navList a:hover {
+  color: var(--accent-orange);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.active a {
+  font-weight: bold;
+  color: var(--accent-orange); /* Mantém a cor de destaque para o link ativo */
+  background-color: rgba(255, 255, 255, 0.15);
+}
