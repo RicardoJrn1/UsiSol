@@ -157,14 +157,14 @@ const EconomiaSimuladaSection: React.FC = () => {
                 </div>
                 <input
                   type="range"
-                  min={40}
-                  max={95}
+                  min={70}
+                  max={90}
                   value={economyPercent}
                   onChange={(e) => setEconomyPercent(Number(e.target.value))}
                   className="mt-3 w-full accent-[var(--primary-blue)]"
                 />
                 <p className="mt-1 text-[11px] text-gray-500">
-                  Valores típicos variam entre 60% e 90%, dependendo do consumo
+                  Valores típicos variam entre 70% e 90%, dependendo do consumo
                   e do projeto.
                 </p>
               </div>
