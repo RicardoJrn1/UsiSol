@@ -102,7 +102,7 @@ export default function Footer() {
             <div>
               <h3 className="text-sm font-semibold text-white">Contato</h3>
               <ul className="mt-5 space-y-3 text-sm text-gray-400">
-                <li>Dois Viznhos - PR</li>
+                <li>Dois Vizinhos - PR</li>
                 <li>
                   <a
                     href={WHATSAPP_LINK}
